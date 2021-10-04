@@ -1,2 +1,2 @@
 # innov-lab-project
-SI Innovation Lab Project (EACH-USP)
+Information Systems Innovation Lab Project (EACH-USP)
