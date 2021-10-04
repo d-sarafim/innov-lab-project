@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-E</title>
+</head>
+<body>
+    <header>
+        <div class="div_logo">
+            <img class="logo" src="images/dark_logo.png" alt="logo">
+            <h2>Code-E</h2>
+        </div>
+        <nav>
+            <ul class="nav_links">
+                <li id="python">Python</li>
+                <li id="javascript">Javascript</li>
+                <li id="java">Java</li>
+                <li id="php">PHP</li>
+            </ul>
+        </nav>
+        <div>
+            <input type="checkbox" class="toggle" id="chk" />
+            <label class="label" for="chk">
+                <i class="fas fa-moon  fa-sm"></i>
+                <i class="fas fa-sun  fa-sm"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+    </header>
+    
+    <div class="tools_panel">
+        <i id="language_icon"></i>
+        <div class="tools_panel_tools">
+            <i class="fas fa-check-square fa-sm" id="btn_analyze"></i>
+            <i class="fas fa-caret-square-right fa-sm" id="btn_run"></i>
+            <i class="fas fa-pause fa-sm" id="btn_stop"></i>
+        </div>
+    </div>
+
+    <div class="editor" id="editor"></div>
+
+    <div class="output"></div>
+
+    <footer>
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> - Code Expert</p>
+        <div class="social">
+            <i class="fab fa-linkedin  fa-sm"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram-square"></i>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs/theme-monokai.js"></script>
+    <script src="js/libs/ace.js"></script>
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>
