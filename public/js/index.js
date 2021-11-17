@@ -72,8 +72,20 @@ analyzeButton.addEventListener('click', () => {
 });
 
 runButton.addEventListener('click', () => {
-    output.innerHTML = 'Executando o código';
+    output.innerHTML = 'Output:';
+    
     clearMarkers();
+
+    const xhr = new XMLHttpRequest();
+
+    xhr.onload = function() {
+        var data = JSON.parse(this.responseText);
+        output.innerHTML = data.result;
+    }
+
+    xhr.open('POST', 'http://localhost:3000/compile');
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify( { language: selectedLanguage, code: editor.session.getValue() } ));
 });
 
 stopButton.addEventListener('click', () => {

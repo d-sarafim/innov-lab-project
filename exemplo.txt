@@ -1,0 +1,16 @@
+import pandas as pd
+
+def build_list(the_list, foo, bar, baz, buz, fiz, biz):
+    the_list.append(foo, bar)
+    the_list.append(baz, buz)
+    the_list.append(fiz, biz)
+    
+
+def print_file(path):
+    file = open(path, "r")
+    print(file.read())
+    
+    
+my_file_path = "C:\\Users\\dssar\\Estudo\\USP\\Disciplinas\\SIN5019\\Atividades\\Projeto\\text.txt"
+
+print_file(my_file_path)

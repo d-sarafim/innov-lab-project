@@ -95,7 +95,7 @@ header {
     margin-right: 20px;
 }
 
-.fa-pause {
+.fa-stop {
     margin-right: 0px;
 }
 
@@ -107,7 +107,7 @@ header {
     color: #00A300;
 }
 
-.fa-pause:hover {
+.fa-stop:hover {
     color: #891528;
 }
 
